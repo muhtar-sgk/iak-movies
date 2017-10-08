@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgPoster"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtGenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imgPoster" />
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGenres"
+        android:layout_toRightOf="@id/imgPoster"/>
+
+    <TextView
+        android:id="@+id/tvRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPoster"
+        android:textStyle="bold"
+        android:text="@string/release_date"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textMediumColor"/>
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvRelease"
+        android:layout_below="@id/imgPoster"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRelease"
+        android:textStyle="bold"
+        android:text="@string/durations"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textMediumColor"/>
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvDirect"
+        android:layout_below="@id/tvRelease"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvBud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDirect"
+        android:textStyle="bold"
+        android:text="@string/budget"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textMediumColor"/>
+
+    <TextView
+        android:id="@+id/tvBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvBud"
+        android:layout_below="@id/tvDirect"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBud"
+        android:textStyle="bold"
+        android:text="@string/status"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textMediumColor"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvStat"
+        android:layout_below="@id/tvBud"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStat"
+        android:layout_marginTop="10dp"
+        android:text="@string/overview"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/txtOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView8"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
